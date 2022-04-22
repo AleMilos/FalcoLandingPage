@@ -1,0 +1,192 @@
+/* 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ */
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+
+/* 87em == 1392px */
+
+@media (max-width: 87em) {
+    
+    .header{
+        display: flex;
+        justify-content: center;
+        padding-right: 15.8rem;
+    }
+
+    .hero-section{
+        padding: 6rem 16rem;
+    }
+
+
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+
+    .form-container{
+        width: 61.5rem;
+    }
+
+    .value-proposition{
+        width: 100%;
+    }
+
+    .value-heading, .value-text{
+        width: inherit;
+        text-align: center;
+    }
+
+    .login-field{
+        margin-right: 0;
+    }
+
+    .features-section {
+        padding: 14rem 0 12rem 0;
+    }
+
+
+  }
+
+  /* 1240px */
+  @media (max-width: 77.5em) {
+   
+    .features-section{
+        padding-bottom: 9.6rem;
+    }
+
+    .features-container{
+        gap: 6rem;
+    }
+
+    .features-container{
+        grid-template-columns: repeat(3, 28rem);
+
+    }
+
+    .card-content{
+        padding: 3rem 4.6rem 4.6rem 4.6rem;
+    }
+
+    .empty-field{
+        display: none;
+    }
+
+    .step-bubble{
+        order: -1;
+    }
+
+    .to-right{
+        text-align: left;
+    }
+
+    .sbs-row{
+        grid-template-columns: auto 1fr;
+
+    }
+
+    .sbs-container{
+        gap: 3rem;
+    }
+
+
+
+
+  }
+
+
+  /* 1100px */
+  @media(max-width:68.75em){
+    .features-container{
+        gap: 5rem;
+    }
+  }
+
+  /* 1000px */
+  @media(max-width:62.5em){
+
+    .hero-container{
+        gap: 10rem;
+    }
+
+    .form-container{
+        width: 64rem;
+        position: unset;
+        transform: unset;
+    }
+
+    .features-container{
+        gap: 4rem;
+    }
+
+    .features-container{
+        grid-template-columns: repeat(2, 28rem);
+    }
+
+    .card-content{
+        padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+    }
+
+    .card-title{
+        text-align:center;
+
+    }
+
+    .last-card{
+        grid-column: span 2;
+        box-shadow: none;
+        /* border: 1px solid black; */
+        margin-top: 3rem;
+    }
+
+
+    .last-attributes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+  }
+
+/*  Da 800 in giù tolgo il bubble e lo faccio diventare un rettangolo in alto */
+
+/* 800px */
+@media(max-width: 50em){
+    .value-proposition{
+        justify-content: center;
+    }
+
+    .form-container{
+        width: 50rem;
+    }
+
+    .footer-container{
+        padding-left: 8rem;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .social-links{
+/* Capire come metterli  O O 
+                         O O  */
+    }
+}
+
+
+/* 550px cambiare footer e form login */

@@ -294,15 +294,6 @@ input[type="submit"]:hover{
 
 }
 
-.card-attribute:hover span{
-    padding-left: 0.5rem;
-}
-
-.card-attribute span{
-    transition: all 0.3s ease;
-
-}
-
 /*******************
  *** StepByStep  ***
 *******************/
@@ -363,7 +354,8 @@ input[type="submit"]:hover{
     transition: all 0.3s ease;
 }
 
-.step-bubble:hover, .sbs-row:hover .step-bubble{
+
+/* .step-bubble:hover, .sbs-row:hover .step-bubble{
     background-color: yellow;
     height: 7.2rem;
     width: 7.2rem;
@@ -373,7 +365,7 @@ input[type="submit"]:hover{
 
 .step-bubble:hover .bubble-counter, .sbs-row:hover .bubble-counter{
     color: black;
-}
+} */
 
 .step-info{
     display: flex;

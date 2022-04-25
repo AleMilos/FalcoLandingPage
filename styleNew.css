@@ -64,8 +64,6 @@ body{
     align-items: center;
     grid-template-columns: 1.5fr 1fr;
     gap: 9.6rem;
-    background-color:chocolate;
-
 }
 
 .value-proposition{

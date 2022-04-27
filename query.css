@@ -129,9 +129,6 @@
 
     .features-container{
         gap: 4rem;
-    }
-
-    .features-container{
         grid-template-columns: repeat(2, 28rem);
     }
 
@@ -147,8 +144,8 @@
     .last-card{
         grid-column: span 2;
         box-shadow: none;
-        /* border: 1px solid black; */
         margin-top: 3rem;
+        
     }
 
 
@@ -188,5 +185,17 @@
     }
 }
 
+/* 650px */
+@media( max-width:40.625em){
+
+
+    /* a card per line */
+    .features-container{
+        grid-template-columns: repeat(1, 28rem);
+        gap: 8rem;
+        }
+
+    /* REMOVE LAST CARD AND LAST ATTRIBUTES IN APP.JS */
+}
 
 /* 550px cambiare footer e form login */

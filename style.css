@@ -44,6 +44,10 @@ body{
     align-items: center;
 }
 
+.test{
+    background-color: red;
+}
+
 .logo{
     height: 8rem;
 }
@@ -352,6 +356,18 @@ input[type="submit"]:hover{
     color: white;
 
     transition: all 0.3s ease;
+}
+
+.show-step-bubble{
+    background-color: yellow;
+    height: 7.2rem;
+    width: 7.2rem;
+    border: 2px solid black;
+
+}
+
+.show-bubble-counter{
+    color: black;
 }
 
 

@@ -72,11 +72,13 @@ body{
 
 .value-proposition{
     /* background-color: gray; */
-    text-align: left;
+    text-align: left;   
 
+    max-width: 65rem;
     display: grid;
-
+    justify-content: right;
     grid-template-columns: 1fr;
+    margin-left: auto;
 
 }
 
@@ -105,11 +107,8 @@ body{
 }
 
 .form-container{
-    /* position: absolute; */
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%,-50%); */
-
     width: 40rem;
     background-color: white;
     border-radius: 10px;
@@ -367,6 +366,7 @@ input[type="submit"]:hover{
 }
 
 .show-bubble-counter{
+    font-size: 2.8rem;
     color: black;
 }
 
@@ -525,7 +525,12 @@ input[type="submit"]:hover{
     - I colori devono essere cambiati tutti
     - La linea che passa sotto tutte le bubble e che nelle bubble non copre i numeri 
     - Aggiungere titolature uppercase delle section (CATEGORIES ad es. STEP BY STEP)
-    
+    - Trovare un modo per allineare il logo nell'header con il value proposition dell'hero.
 */
 
 /* GENERAL */
+
+
+.testUno{
+
+}

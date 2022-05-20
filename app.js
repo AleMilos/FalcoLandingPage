@@ -16,19 +16,17 @@ $(window).on("resize", resize);
 resize(); // call once initially
 
 
-function removeAt650(){
-    var lastCard = document.getElementById("toRemove1");
-    var lastAttribute = document.getElementById("toRemove2");
-    lastCard.classList.remove("last-card");
-    lastAttribute.classList.remove("last-attributes");
-    }
+// function removeAt650(){
+//     var lastCard = document.getElementById("toRemove1");
+//     var lastAttribute = document.getElementById("toRemove2");
+//     lastCard.classList.remove("last-card");
+//     lastAttribute.classList.remove("last-attributes");
+//     }
 
-function addAt650(){
-    var lastCard = document.getElementById("toRemove1");
-    var lastAttribute = document.getElementById("toRemove2");
-    lastCard.classList.add("last-card");
-    lastAttribute.classList.add("last-attributes");
-    }
+// function addAt650(){
+//     var lastCard = document.getElementById("toRemove1");
+//     var lastAttribute = document.getElementById("toRemove2");
+//     lastCard.classList.add("last-card");
+//     lastAttribute.classList.add("last-attributes");
+//     }
 
-
-   

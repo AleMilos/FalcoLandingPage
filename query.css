@@ -14,8 +14,30 @@
 /**************************/
 
 
-/* 87em == 1392px */
 
+/* 1900px*/
+
+
+
+/* 1800 px */
+
+@media (min-width:  106.25em){
+    .header{
+        padding: 0 28.5rem;
+    }
+}
+
+/* 1700px*/
+
+@media (min-width:  100em){
+    .header{
+        padding: 0 20.2rem;
+    }
+}
+
+
+
+/* 87em == 1392px */
 @media (max-width: 87em) {
     
     .header{
@@ -42,6 +64,7 @@
 
     .value-proposition{
         width: 100%;
+        max-width: none;
     }
 
     .value-heading, .value-text{
@@ -193,6 +216,10 @@
     .features-container{
         grid-template-columns: repeat(1, 28rem);
         gap: 8rem;
+        }
+    
+        .last-card{
+            grid-column: span 0 ;
         }
 
     /* REMOVE LAST CARD AND LAST ATTRIBUTES IN APP.JS */

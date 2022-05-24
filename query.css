@@ -211,18 +211,45 @@
 /* 650px */
 @media( max-width:40.625em){
 
-
     /* a card per line */
     .features-container{
         grid-template-columns: repeat(1, 28rem);
         gap: 8rem;
         }
     
-        .last-card{
-            grid-column: span 0 ;
+    .last-card{
+        grid-column: span 0 ;
         }
+
+
+    .sbs-row{
+       display: unset; 
+       margin-bottom: 0;
+    }
+
+    .stpe-info{
+
+    }
+
+    .step-title{
+        text-align: center;
+        transition: all 0.5s ease;
+        
+
+    }
+
+    .step-text{
+        padding-top: 2rem;
+    }
+
+    
+
+    .step-bubble{
+        display: none;
+    }
 
     /* REMOVE LAST CARD AND LAST ATTRIBUTES IN APP.JS */
 }
 
 /* 550px cambiare footer e form login */
+/* Togliere il login in questa forma ed elaborare qualcosa in js*/

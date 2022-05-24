@@ -410,6 +410,16 @@ input[type="submit"]:hover{
     text-align: right;
 }
 
+/*For less tn 650px*/
+.step-title-less650{
+    border: 2px ridge red;
+    text-align: center;
+}
+
+/* .step-bubble-less650{
+    display: none;
+} */
+
 /*******************
  *** cta section ***
 *******************/

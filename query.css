@@ -237,6 +237,9 @@
         
 
     }
+    .show-step-title{
+        text-align: center;  
+    }
 
     .step-text{
         padding-top: 2rem;

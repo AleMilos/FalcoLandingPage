@@ -398,6 +398,9 @@ input[type="submit"]:hover{
     font-size: 3rem;
     font-weight: 700;
 
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 500ms;
     margin-bottom: 3.2rem;
 }
 
@@ -411,9 +414,10 @@ input[type="submit"]:hover{
 }
 
 /*For less tn 650px*/
-.step-title-less650{
-    border: 2px ridge red;
-    text-align: center;
+.show-step-title{
+    transform: translateX(0);
+    opacity: 1  ;
+    /* text-align: center;  */
 }
 
 /* .step-bubble-less650{

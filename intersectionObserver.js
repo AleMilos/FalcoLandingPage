@@ -18,14 +18,15 @@ const observer = new IntersectionObserver (entries => {
 
 const observerTitles = new IntersectionObserver (entries => {
     entries.forEach(entry => {
-        entry.target.classList.toggle("step-title-less650", entry.isIntersecting)
-        //if(entry.isIntersecting) observer.unobserve(entry.target) NEL CASO IN CUI VOGLIO 1 sola animation
+        entry.target.classList.toggle("show-step-title", entry.isIntersecting)
+        if(entry.isIntersecting) observer.unobserve(entry.target) 
+        //NEL CASO IN CUI VOGLIO 1 sola animation
 
     })
 
 },
 {
-    threshold: 1
+    // threshold: 1
 })
 
 
@@ -33,16 +34,21 @@ bubbles.forEach(bubble => {
     observer.observe(bubble)
 })
 
-const mq = window.matchMedia( "(max-width:40.625em)" );
-
-if (!mq.matches) {
-    console.log("test");
-      
-} else {
-    titles.forEach(title => {
+titles.forEach(title => {
         observerTitles.observe(title)
     })
-}
+
+    
+const mq = window.matchMedia( "(max-width:40.625em)" );
+
+//  if (!mq.matches) {
+//      console.log("test");
+      
+//  } else {
+//      titles.forEach(title => {
+//         observerTitles.observe(title)
+//      })
+// }
 /*
     bubbles.forEach(bubble => {
         observer.observe(bubble)

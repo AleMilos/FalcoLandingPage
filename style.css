@@ -400,7 +400,7 @@ input[type="submit"]:hover{
 
     transform: translateX(-100px);
     opacity: 0;
-    transition: 500ms;
+    transition: 100ms;
     margin-bottom: 3.2rem;
 }
 
@@ -417,7 +417,6 @@ input[type="submit"]:hover{
 .show-step-title{
     transform: translateX(0);
     opacity: 1  ;
-    /* text-align: center;  */
 }
 
 /* .step-bubble-less650{

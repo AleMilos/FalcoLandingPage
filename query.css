@@ -210,6 +210,7 @@
 
 /* 650px */
 @media( max-width:40.625em){
+    
 
     /* a card per line */
     .features-container{
@@ -221,6 +222,10 @@
         grid-column: span 0 ;
         }
 
+    .sbs-section{
+        padding: 4.8rem;
+        padding-bottom: 0;
+    }
 
     .sbs-row{
        display: unset; 
@@ -239,6 +244,9 @@
     }
     .show-step-title{
         text-align: center;  
+        transition: 500ms;
+        border: 2px solid black;
+        border-radius: 10px;
     }
 
     .step-text{
@@ -251,7 +259,18 @@
         display: none;
     }
 
+    .footer-container{
+        padding-left: 4rem;
+    }
+
     /* REMOVE LAST CARD AND LAST ATTRIBUTES IN APP.JS */
+}
+
+/* 500px */
+@media( max-width:31.25em)   {
+    .footer-container{
+        padding-left: 2rem;
+    }
 }
 
 /* 550px cambiare footer e form login */

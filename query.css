@@ -266,11 +266,25 @@
     /* REMOVE LAST CARD AND LAST ATTRIBUTES IN APP.JS */
 }
 
+@media( max-width:34.375em){
+
+    .form-container{
+        width: 35rem;
+    }
+}
+
 /* 500px */
 @media( max-width:31.25em)   {
+    
+    .footer{
+        padding: 5rem 0 8rem 0;
+    }
+    
     .footer-container{
         padding-left: 2rem;
     }
+
+    
 }
 
 /* 550px cambiare footer e form login */

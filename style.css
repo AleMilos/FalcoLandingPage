@@ -142,7 +142,10 @@ body{
 
 .login-field{
     height: 100%;
-    position: relative;
+    /* position: relative;
+    ?? This is commented cauze it affects the graphic for mob navigation --> maybe 
+    jst remove it on lower size screen? 
+    */ 
 
     margin-right: 9.6rem;
 }

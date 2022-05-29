@@ -42,15 +42,56 @@ body{
 
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
 
-.test{
-    background-color: red;
+    position: relative;
+    
 }
 
 .logo{
     height: 8rem;
 }
+
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: black;
+}
+
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
+
 
 /*******************
  *** HERO SECT   ***
@@ -227,6 +268,7 @@ input[type="submit"]:hover{
 .features-header{
     text-align: center;
     margin-bottom: 9.6rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .features-heading{
@@ -542,8 +584,3 @@ input[type="submit"]:hover{
 */
 
 /* GENERAL */
-
-
-.testUno{
-
-}

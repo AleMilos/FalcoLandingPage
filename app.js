@@ -1,7 +1,5 @@
 // If the max width is less than 650 px --> remove .last-card and .last-attributes. 
 
-
-
 function resize() {
     if ( $(window).width() < 650) {     
         $("#toRemove1").removeClass("last-card");
@@ -11,9 +9,13 @@ function resize() {
         $("#toRemove1").addClass("last-card");
         $("#toRemove2").addClass("last-attributes");
     }
-}
+}       
 $(window).on("resize", resize);
 resize(); // call once initially
+
+// Mobile navigation JS
+
+
 
 
 // function removeAt650(){

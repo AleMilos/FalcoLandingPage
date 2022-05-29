@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="query.css">
 
     <script src="app.js"></script>
+    <script src="mobile-nav.js"></script>
     <script src="intersectionObserver.js" defer></script>
 </head>
 <body>
@@ -53,6 +54,20 @@
        <a href="#">
         <img class="logo" src="img/falco_logo.png" alt="falco logo">
        </a>
+
+       <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Login</a></li>
+          <li><a class="main-nav-link" href="#">Offerings</a></li>
+          <li><a class="main-nav-link" href="#">Methodology</a></li>
+        </ul>
+      </nav>
+
+       <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+
     </header>
 
 <!-- HERO -------------------------------------------------------------------------------------------->
@@ -61,7 +76,7 @@
 
     <section class="hero-section">
       <div class="hero-container">
-        <div class="value-proposition testUno">
+        <div class="value-proposition">
 
           <h1 class="value-heading"> Engineering and Mathematical approach to problems </h1>
           <p class="value-text">

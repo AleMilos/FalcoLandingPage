@@ -272,8 +272,17 @@
         }
     
     .last-card{
-        grid-column: span 0 ;
+        grid-column:unset;
+        box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 20%);
+        /* ??BOX-SHADOW can be removed if preferred */
+        margin-top: 0;
         }
+
+    .last-attributes{
+            display: grid;
+            grid-template-columns: 1fr;
+    }
+    
 
     .sbs-section{
         padding: 4.8rem;

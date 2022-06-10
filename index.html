@@ -37,8 +37,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="query.css">
     
-    <script src="mobile-nav.js"></script>
-    <script src="intersectionObserver.js" defer></script>
+  
 </head>
 <body>
   
@@ -56,9 +55,9 @@
 
        <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Login</a></li>
-          <li><a class="main-nav-link" href="#">Offerings</a></li>
-          <li><a class="main-nav-link" href="#">Methodology</a></li>
+          <li><a class="main-nav-link link" href="#login-field">Login</a></li>
+          <li><a class="main-nav-link link" href="#offerings">Offerings</a></li>
+          <li><a class="main-nav-link link" href="#methodology">Methodology</a></li>
         </ul>
       </nav>
 
@@ -84,7 +83,7 @@
         </div>
 
 <!-- Login input field -->
-  <div class="login-field">
+  <div class="login-field" id="login-field">
     <div class="form-container">
       <h1> Welcome Back </h1>
       <form method="post">
@@ -112,7 +111,7 @@
 <!-- FEATURES  --------------------------------------------------------------------------------------->
 <!-- FEATURES  --------------------------------------------------------------------------------------->
 
-    <section class="features-section">
+    <section class="features-section" id="offerings">
 
 
       <div class="features-header">
@@ -229,7 +228,7 @@
 <!-- STEP BY STEP  ----------------------------------------------------------------------------------->
 
 
-    <section class="sbs-section">
+    <section class="sbs-section" id="methodology">
 
       <div class="sbs-header">
         <h2 class="sbs-heading"> Falco Work Methodology</h2>
@@ -357,6 +356,9 @@
         </div>
       </div>
     </footer>
+    
+    <script src="mobile-nav.js"></script>
+    <script src="intersectionObserver.js" defer></script>
     
 </body>
 </html>

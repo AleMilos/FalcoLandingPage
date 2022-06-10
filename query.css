@@ -286,6 +286,12 @@ f/*
             grid-template-columns: 1fr;
     }
     
+    .sbs-container{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin-bottom: 20rem;
+    }
 
     .sbs-section{
         padding: 4.8rem;
@@ -310,16 +316,20 @@ f/*
     .show-step-title{
         text-align: center;  
         transition: 500ms;
-        border: 2px solid black;
         border-radius: 10px;
+
+        /*  Comment below to have white background and undo comment of border */
+        background: black;
+        color: white;
+         /* border: 2px solid black; */ 
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
     }
 
-    .step-text{
+    /* .step-text{
         padding-top: 2rem;
-    }
-
-    
-
+    } */
     .step-bubble{
         display: none;
     }

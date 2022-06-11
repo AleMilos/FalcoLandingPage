@@ -303,14 +303,10 @@ f/*
        margin-bottom: 0;
     }
 
-    .stpe-info{
-
-    }
 
     .step-title{
         text-align: center;
         transition: all 0.5s ease;
-        
 
     }
     .show-step-title{
@@ -322,14 +318,14 @@ f/*
         background: black;
         color: white;
          /* border: 2px solid black; */ 
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
 
     }
 
-    /* .step-text{
-        padding-top: 2rem;
-    } */
+    .step-text{
+        /* padding-top: 2rem; */
+    }
+    
     .step-bubble{
         display: none;
     }

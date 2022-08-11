@@ -1,8 +1,6 @@
 const headerEl = document.querySelector(".header")
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 
-window.opener.location.assign("https://falco-pm.web.app/auth/login")
-window.opener.location.reload()
 
 // Toggle the window
 btnNavEl.addEventListener("click", function(){

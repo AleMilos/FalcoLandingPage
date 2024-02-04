@@ -1,0 +1,368 @@
+f/* 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ */
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+
+
+/* 1900px*/
+
+
+
+/* 1800 px */
+
+@media (min-width:  106.25em){
+    .header{
+        padding: 0 28.5rem;
+    }
+}
+
+/* 1700px*/
+
+@media (min-width:  100em){
+    .header{
+        padding: 0 20.2rem;
+    }
+}
+
+
+
+/* 87em == 1392px */
+@media (max-width: 87em) {
+    
+    .hero-section{
+        padding: 6rem 16rem;
+    }
+
+
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+
+    .form-container{
+        width: 61.5rem;
+    }
+
+    .value-proposition{
+        width: 100%;
+        max-width: none;
+    }
+
+    .value-heading, .value-text{
+        width: inherit;
+        text-align: center;
+    }
+
+    .login-field{
+        margin-right: 0;
+    }
+
+    .features-section {
+        padding: 14rem 0 12rem 0;
+    }
+
+
+  }
+
+  /* 1240px */
+  @media (max-width: 77.5em) {
+   
+    .features-section{
+        padding-bottom: 9.6rem;
+    }
+
+    .features-container{
+        gap: 6rem;
+    }
+
+    .features-container{
+        grid-template-columns: repeat(3, 28rem);
+
+    }
+
+    .card-content{
+        padding: 3rem 4.6rem 4.6rem 4.6rem;
+    }
+
+    .empty-field{
+        display: none;
+    }
+
+    .step-bubble{
+        order: -1;
+    }
+
+    .to-right{
+        text-align: left;
+    }
+
+    .sbs-row{
+        grid-template-columns: auto 1fr;
+
+    }
+
+    .sbs-container{
+        gap: 3rem;
+    }
+
+
+
+
+  }
+
+
+  /* 1100px */
+  @media(max-width:68.75em){
+    .features-container{
+        gap: 5rem;
+    }
+  }
+
+  /* 1000px */
+  @media(max-width:62.5em){
+
+    /* MOBILE WINDOW */
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.8);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        
+        opacity: 1;
+
+
+        pointer-events: none;
+
+
+        visibility: hidden;
+    }
+
+    .main-nav-list{
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+      }
+
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none;
+    }
+   
+    /* Rest of code */
+
+
+    .btn-mobile-nav{
+        display: block;
+    }
+
+    .hero-container{
+        gap: 10rem;
+    }
+
+    .form-container{
+        width: 64rem;
+        position: unset;
+        transform: unset;
+    }
+
+    .features-container{
+        gap: 4rem;
+        grid-template-columns: repeat(2, 28rem);
+    }
+
+    .card-content{
+        padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+    }
+
+    .card-title{
+        text-align:center;
+
+    }
+
+    .last-card{
+        grid-column: span 2;
+        box-shadow: none;
+        margin-top: 3rem;
+        
+    }
+
+
+    .last-attributes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+  }
+
+/*  Da 800 in giù tolgo il bubble e lo faccio diventare un rettangolo in alto */
+
+/* 800px */
+@media(max-width: 50em){
+    .value-proposition{
+        justify-content: center;
+    }
+
+    .form-container{
+        width: 50rem;
+    }
+
+    .footer-container{
+        padding-left: 8rem;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .social-links{
+/* Capire come metterli  O O 
+                         O O  */
+    }
+}
+
+/* 650px */
+@media( max-width:40.625em){
+
+    .header{
+        padding: 0 8rem;
+    }
+    
+    .btn-mobile-nav{
+        display: block;
+    }
+    
+
+    /* a card per line */
+    .features-container{
+        grid-template-columns: repeat(1, 28rem);
+        gap: 8rem;
+        }
+    
+    .last-card{
+        grid-column:unset;
+        box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 20%);
+        /* ??BOX-SHADOW can be removed if preferred */
+        margin-top: 0;
+        }
+
+    .last-attributes{
+            display: grid;
+            grid-template-columns: 1fr;
+    }
+    
+    .sbs-container{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin-bottom: 20rem;
+    }
+
+    .sbs-section{
+        padding: 4.8rem;
+        padding-bottom: 0;
+    }
+
+    .sbs-row{
+       display: unset; 
+       margin-bottom: 0;
+    }
+
+
+    .step-title{
+        text-align: center;
+        transition: all 0.5s ease;
+
+    }
+    .show-step-title{
+        text-align: center;  
+        transition: 500ms;
+        border-radius: 10px;
+
+        /*  Comment below to have white background and undo comment of border */
+        background: black;
+        color: white;
+         /* border: 2px solid black; */ 
+        padding: 1rem;
+
+    }
+
+    .step-text{
+        /* padding-top: 2rem; */
+    }
+    
+    .step-bubble{
+        display: none;
+    }
+
+    .footer-container{
+        padding-left: 4rem;
+    }
+
+    /* REMOVE LAST CARD AND LAST ATTRIBUTES IN APP.JS */
+}
+
+@media( max-width:34.375em){
+
+    .form-container{
+        width: 35rem;
+    }
+}
+
+/* 500px */
+@media( max-width:31.25em)   {
+    
+    .header{
+        padding: 0 4rem;
+    }
+
+    .footer{
+        padding: 5rem 0 8rem 0;
+    }
+    
+    .footer-container{
+        padding-left: 2rem;
+    }
+
+
+
+    
+}
+
+/* 550px cambiare footer e form login */
+/* Togliere il login in questa forma ed elaborare qualcosa in js*/
